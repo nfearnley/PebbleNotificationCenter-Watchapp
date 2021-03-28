@@ -57,4 +57,5 @@ uint8_t getCurWindow(void);
 const char* config_getFontResource(int id);
 void closeApp(void);
 bool canVibrate(void);
+bool inDigiduncanMode(void);
 #endif /* NOTIFICATIONCENTER_H_ */

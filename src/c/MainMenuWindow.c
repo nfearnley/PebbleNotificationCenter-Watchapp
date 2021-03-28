@@ -193,13 +193,13 @@ static void update_settings(void)
 
 	if (config_disableVibration)
 	{
-		settingsSectionItems[1].title = "Vibration OFF";
-		settingsSectionItems[1].subtitle = "Press to enable";
+		settingsSectionItems[1].title = "DigiDuncan ON";
+		settingsSectionItems[1].subtitle = "Press to disable";
 	}
 	else
 	{
-		settingsSectionItems[1].title = "Vibration ON";
-		settingsSectionItems[1].subtitle = "Press to disable";
+		settingsSectionItems[1].title = "DigiDuncan OFF";
+		settingsSectionItems[1].subtitle = "Press to enable";
 	}
 
 	settingsSectionItems[2].title = "Clear History";

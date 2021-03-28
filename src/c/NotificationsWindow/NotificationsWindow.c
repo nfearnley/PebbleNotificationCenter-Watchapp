@@ -264,7 +264,7 @@ static void second_tick(void)
         light_enable(false);
     }
 
-    if (periodicVibrationPeriod > 0 &&
+    if (!inDigiduncanMode() && periodicVibrationPeriod > 0 &&
         appIdle &&
         elapsedTime > 0 && elapsedTime % periodicVibrationPeriod == 0 &&
         !nw_get_displayed_notification()->inList &&

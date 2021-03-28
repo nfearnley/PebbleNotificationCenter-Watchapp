@@ -70,7 +70,11 @@ const char* config_getFontResource(int id)
 
 bool canVibrate(void)
 {
-	return !config_disableVibration && (!config_dontVibrateWhenCharging || !battery_state_service_peek().is_plugged);
+	return (!config_dontVibrateWhenCharging || !battery_state_service_peek().is_plugged);
+}
+
+bool inDigiduncanMode() {
+	return config_disableVibration;
 }
 
 uint8_t getCurWindow(void)
